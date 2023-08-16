@@ -1,0 +1,42 @@
+
+
+
+
+
+
+#section{
+    display: flex;
+    
+}
+h4{
+    color: white;
+}
+h2{
+    color: white;
+}
+h1{
+    color: white;
+    font-size:45px;
+}
+.first_box{
+    background-color: var(--Lightslatebluebackground);
+    border-radius: 20px;
+    width: 300px;
+    margin: 10% 20%;
+    padding: 30px;
+    align-items: center;
+    color: white;
+}
+.text{
+    text-align: center;
+}
+.circle{
+    border-radius:50%;
+    background-color: var(--Lightroyalbluebackground);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
