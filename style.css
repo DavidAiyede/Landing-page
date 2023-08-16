@@ -1,42 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
 
 
 
+:root{
+    --Lightslateblue-background: hsl(252, 100%, 67%);
+    --Lightroyalblue-background: hsl(241, 81%, 54%);
+    --Violetblue-circle: hsla(256, 72%, 46%, 1);
+    --Persianblue-circle: hsla(241, 72%, 46%, 0);
+}
+:root{
+    --Light-red: hsl(0, 45%, 94%);
+    --Orangey-yellow: hsl(42, 85%, 95%);
+    --Green-teal: hsl(167, 66%, 94%);
+    --Cobalt-blue: hsl(234, 74%, 93%);
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
 
+span{
+    color: rgba(0, 0, 0, 0.5);
+}
 
-
-#section{
+.container{
+    width: 100%;
+    height:100vh;
+    justify-content: center;
     display: flex;
-    
-}
-h4{
-    color: white;
-}
-h2{
-    color: white;
-}
-h1{
-    color: white;
-    font-size:45px;
-}
-.first_box{
-    background-color: var(--Lightslatebluebackground);
-    border-radius: 20px;
-    width: 300px;
-    margin: 10% 20%;
-    padding: 30px;
     align-items: center;
-    color: white;
 }
-.text{
-    text-align: center;
+.wrapper{
+    border-radius: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.circle{
+.first_item{
+    background-image:linear-gradient(to bottom, var(--Lightslateblue-background) , var(--Lightroyalblue-background));
+    border-radius: 20px;
+    width: 250px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.second_item{
+    display: flex;
+    flex-direction: column;
+    /* background-image:linear-gradient(to bottom, var(--Lightslateblue-background) , var(--Lightroyalblue-background)); */
+    border-radius: 20px;
+    width: 250px;
+    padding: 20px;
+}
+.first_title{
+    color: rgba(255, 255, 255, 0.801);
+    font-size: large;
+}
+.circle{   
     border-radius:50%;
-    background-color: var(--Lightroyalbluebackground);
+    background-image: linear-gradient(to bottom, var(--Violetblue-circle), var(--Lightroyalblue-background));
     width: 180px;
     height: 180px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10%;
+}
+.circle h2{
+    font-size: 90px;
+    font-weight:700;
+    color: white;
+    font-family: sans-serif;
+}
+.circle h6{
+    color: white;
+    font-size: large;
+}
+.great{
+    color: white;
+    font-size: 25px;
+    margin-top: 10%;
+}
+.description{
+    color: rgba(255, 255, 255, 0.836);
+    width: 80%;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    
+}
+.box_text1{
+   display: flex;
+   column-gap: 8px;
+}
+.box_text2{
+    display: flex;
+    column-gap: 8px;
+ }
+ .box_text3{
+    display: flex;
+    column-gap: 8px;
+ }
+ .box_text4{
+    display: flex;
+    column-gap: 8px;
+ }
+.box_text1 h5{
+    color: rgb(241, 83, 83);
+    font-size: large;
+}
+.box_text2 h5{
+    color: rgb(224, 224, 16);
+    font-size: large;
+}
+.box_text3 h5{
+    color: rgba(39, 189, 39, 0.795);
+    font-size: large;
+}
+.box_text4 h5{
+    color: rgb(10, 10, 143);
+    font-size: large;
+}
+.box{
+    justify-content: space-between;
+    display: flex;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.box:nth-child(1){
+    background-color: var(--Light-red);
+}
+.box:nth-child(2){
+  background-color: var(--Orangey-yellow);
+}
+.box:nth-child(3){
+    background-color: var(--Green-teal);
+}
+.box:nth-child(4){
+    background-color: var(--Cobalt-blue);
+}
+button{
+    transition: 0.5s;
+    color: white;
+    margin-top: 5%;
+    padding: 7%;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to bottom , var(--Lightslateblue-background), var(--Lightroyalblue-background));
+    
+}
+button:hover{
+    transform: scale(1.1);
+    background:rgb(67, 67, 207);
+}
+
+
+
+@media screen and (max-width: 615px) {
+    .wrapper{
+        margin-top: 350px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:320px) {
+    .wrapper{
+        margin-top: 450px;
+    }
 }
